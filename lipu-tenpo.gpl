@@ -1,11 +1,6 @@
 GIMP Palette
-Name: lipu tenpo (tan mun 10-2023)
+Name: lipu tenpo (tan mun 2-2024)
 Columns: 3
-
-# walo #ccc li pimeja a ·
-# tan ni la kiwen walo li walo #ddd ·
-
-# o pimeja lili e toki lili ·
 
 255	255	255	walo taso
 221	221	221	kiwen walo
@@ -15,17 +10,13 @@ Columns: 3
 0	0	0	pimeja taso
 
 204	204	255	unu walo
-136	136	255	unu
 51	51	204	unu pimeja
 
-255	255	204	jelo walo
-255	255	136	jelo
-170	136	34	jelo pimeja
+255	255	170	jelo walo
+102	85	0	jelo pimeja
 
 255	204	204	loje walo
-255	136	136	loje
 170	17	17	loje pimeja
 
 170	238	221	laso walo
-68	187	170	laso
 17	68	68	laso pimeja
