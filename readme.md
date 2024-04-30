@@ -11,9 +11,19 @@ To make an edition of *lipu tenpo*, you need
 1. a vector editor like [Inkscape](https://inkscape.org)
 1. `git`
 
+Sometimes, a bitmap-processing tool like [GIMP]() can also be helpful.
+
 ## working with Scribus
 
 Scribus is the main tool that you will use. This section contains some tips for your workflow.
+
+Turn off hyphenation.
+
+## working with Inkscape
+
+If you use Inkscape, copy the file `/lipu-tenpo.gpl` to where Inkscape stores its palettes, which is `~/.config/inkscape/palettes`. Select it using TODO in Inkscape.
+Copy the template file TODO into the folder of the edition.
+The palette is: TODO table
 
 ### the scrapbook
 
@@ -31,10 +41,7 @@ If you make a new edition, TODO.
 If you make a different version of an edition, make its folder.
 In the root of the directory, make a new folder for the edition. Its name must be the name of the edition. For instance, `/nanpa lipu`. In the folder of the edition, create three folders: `ijo`, `sitelen`, and `toki`.
 
-In the
-
 In addition, you must know the following:
-
 
 1. the articles in plaintext form
 1. the titles of the articles
@@ -48,20 +55,18 @@ In addition, you must know the following:
 
 TODO use the files that you need for all editions, move them to `/ali`
 
-If you use Inkscape, copy the file `/lipu-tenpo.gpl` to where Inkscape stores its palettes, which is `~/.config/inkscape/palettes`. Select it using TODO in Inkscape.
-Copy the template file TODO into the folder of the edition.
-The palette is: TODO table
-
 ## an article
 
 ### the text
 
-import
+import with *Control + `i`*.
+Line breaks are like paragraph breaks to Scribus. You must adjust them manually.
 
 ### images
 
 text wrap
 positioning: integers. this is for the greyscale version.
+illustrator: in footnote style next to the image
 
 ### footnotes
 
@@ -69,9 +74,41 @@ Footnote in the text: regular letter (or superscript? TODO), and apply the style
 
 ### title
 
-### tilte background
+### background shape
 
-Inkscape, use spine path TODO.
+Every article has a title, and every title has a background shape. You must draw this background shape manually. For every article, do this:
+
+1. Open the file `ijo/ko.svg` in Inkscape.
+1. In Scribus, a screenshot of the title.
+1. Paste the screenshot in `ijo/ko.svg` in Inkscape.
+1. With the TODO tool, draw a path around the title.
+	1. Draw a shape that fits the article, if this is possible.
+		- For an article about a Toki Pona meetup in *nanpa kalama*, I drew three text bubbles, like a conversation.
+		- For an article about coffee in *nanpa sewi* TODO I drew a leaf and a drop.
+	1. Otherwise, draw a simple bubble or a text bubble.
+1. Give the path the light background that corresponds with the colour for the category that the article is in.
+
+Now that you have drawn all the blobs, it is time to export them.
+
+1. Go to the *Layers* menu in Inkscape with *Control + Shift + `l`*.
+1. Find the paths that you drew.
+1. Rename each path to the title of the article that it is drawn for.
+	- A name like `path0053` TODO would be replaced by `jan li toki pona`.
+1. Go to the *Export* menu with *Control + Shift + `e`*.
+1. TODO the batch tab (Inkscape 1.3+, I think)
+1. TODO prefix
+1. TODO position
+
+You now have a file for each background shape. Let’s put it in Scribus. For every article, do this:
+
+1. Navigate to the page of an article that doesn’t have a background shape yet.
+1. Go to *TODO › Import Vector File…* with your custom shortcut *Control + Shift + `i`*.
+1. Select the right shape from the file list.
+1. Click near the title that you want to place the shape on.
+	- The shape will be big. I don’t know what the regularity is, but it happens.
+1. Move the shape to the background using *Control + End*.
+1. Resize the shape.
+	- For precise rescaling, go to the *Properties* pane (*F4*) TODO. There, you can add an arithmetic expression to the position and scale fields.
 
 ## the cover
 
@@ -83,15 +120,18 @@ The proportions of the front-cover image are preferably TODO.
 
 The front-cover image is usually in SVG format, because jan Simo usually draws it.
 
-## the second page
-
 The second page of an edition has four parts.
 
-### table of contents
+## table of contents
 
-### *jan pali*
+Add attributes
+Generate Table of Contents
+
+## *jan pali*
 
 The *jan pali* section contains the names of all people who contributed to the edition.
+
+### sorting
 
 For each part, the names are sorted alphabetically, that is: `a e i j k l m n o p s t u w`,
 and the pseudo-letter ‹end of word› goes before all of them, as usual.
@@ -100,7 +140,7 @@ But we use some extra rules, because, in Toki Pona, the structure of a name is *
 These are the rules:
 
 - Sort by proper name, not noun.
-	- jan Kasape < akesi Lipamanka < akesi kon Nalasuni
+	- waso Atelin < jan Kasape < akesi kon Nalasuni
 - If two people have the same proper name, but a different headnoun, break the tie using the noun.
 	- jan Temi < mu Temi < mun Temi < jan Temili < mun Temili < pan Temili
 - If a name contains multiple proper names, ignore the spaces between them.
@@ -115,13 +155,15 @@ If a name does not follow the structure *\[one or more nouns\] \[one or more pro
 If someone prefers their proper name to be spelt with a lowercase letter, then treat it as if it were capitalised.
 - jan Nalu < soweli nata < palisa jelo Natan
 
-If a name contains only a headnoun, treat it as a name.
+If a name contains only a headnoun, treat it as a proper name.
 - jan Lakuse < lipamanka < jan Lokan
 
 But if a name consists of multiple words and no proper name, many orderings may make sense.
 You might want to ignore particles like ‹pi›, and put ‹jan pi nimi ala› before TODO, such as in *nanpa TODO*.
 
 jan Nalu ? jan pi nimi ala
+
+### preparing
 
 Once the names are sorted, do the following:
 
@@ -131,7 +173,7 @@ Once the names are sorted, do the following:
 
 A no-break space is the symbol ` `.
 
-- *Compose key + Space + Space*, or *Control + Shift + `u`, `A0`, Return*.
+- *Compose key + Space + Space*, or *Control + Shift + `u`, `a0`, Return*.
 - *Alt + TODO*
 - In Scribus, TODO
 
@@ -139,18 +181,13 @@ If you don’t want to type it, break the paragraph manually with soft breaks. T
 
 - no-break spaces between ‹li alasa e pakala toki.› and so forth.
 
-### introduction by jan Sonatan
+## introduction by jan Sonatan
 
-Use an en dash (`–`).
+jan Sonatan will usually break the lines for you in a good way.
 
-- *Compose key + `-` + `-` + `.`*
-- *Alt + TODO*
-- In Scribus, TODO
+First and last line is in the style *toki wawa* and has colour *unu pimeja*.
 
-
-### legal notice
-
-Ensure that the year of publication is correct.
+In the last line, use an en dash (`–`), like this: `– jan Sonatan`.
 
 ## checklist before publishing
 
@@ -159,14 +196,17 @@ Ensure that the year of publication is correct.
 - images: use integers for scaling and panning, because you have to remember them
 
 - checks
+1. *jan pali*
+	1. Are exactly all the authors mentioned before *li toki*?
+	1. Are exactly all the illustrators mentioned before *li sitelen*?
+	1. Are you and the designers mentioned before *li sijelo e lipu*?
 1. order
-	1. Are all the page numbers correct?
 	1. Where there are multiple articles on one page, does the order of articles correspond to the order in the table of contents?
 		- If not, move some titles to the foreground.
 		- select the title
 	1. Does the category name next to the page number correspond with the category name of the article on it?
 		- If the category changes in the middle of a page, use that category.
-		- If there are multiple categories.
+		- If there are multiple categories, ‹4 · toki · pilin›
 	1. Does each non-poetry article start with an arrow and end with a ‹pini› symbol?
 		1. If an article continues from an odd page to an even page, is there an arrow in the bottom right on the odd page?
 		1. Are the first words of each non-poetry article in bold?
@@ -191,3 +231,7 @@ Ensure that the year of publication is correct.
 Front cover: use your imagination; make front and back look good. Use only the colours ‹kiwen› and ‹kiwen walo›
 
 ### replacing the colours
+
+## a *sitelen pona* version
+
+I have never made a *sitelen pona* version yet, so I don’t know what it’s like. Once I have done it, I’ll share my experiences in this document.
