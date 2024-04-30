@@ -122,6 +122,14 @@ The front-cover image is usually in SVG format, because jan Simo usually draws i
 
 The second page of an edition has four parts.
 
+### the edge
+
+The edge is a vector file. It has a bleed of 3 mm. You must make one yourself for each edition.
+Use one blob for each of the four colours.
+On either side of the cover, exactly three must be visible.
+Make sure that the distribution of these blobs is not the same as in the previous two editions.
+TODO
+
 ## table of contents
 
 Add attributes
@@ -140,7 +148,7 @@ But we use some extra rules, because, in Toki Pona, the structure of a name is *
 These are the rules:
 
 - Sort by proper name, not noun.
-	- waso Atelin < jan Kasape < akesi kon Nalasuni
+	- kije Enki < jan Kasape < akesi kon Nalasuni
 - If two people have the same proper name, but a different headnoun, break the tie using the noun.
 	- jan Temi < mu Temi < mun Temi < jan Temili < mun Temili < pan Temili
 - If a name contains multiple proper names, ignore the spaces between them.
