@@ -243,6 +243,12 @@ In the last line, use an en dash (`–`), like this: `– jan Sonatan`.
 
 Front cover: use your imagination; make front and back look good. Use only the colours ‹kiwen› and ‹kiwen walo›
 
+## printable versions
+
+- Use <https://tools.pdf24.org/de/pdf-seiten-sortieren> to re-sort the pages in the order: `16 - 1 , 2 - 15 , 14 - 3 , 4 - 13, 12 - 5, 6 - 11, 10 - 7, 8 - 9`
+- open documents in your preferred pdf viewer, click on print, chose "microsoft to print", click on "two pages per page" or whatever it is in English, create pdf file
+- repeat for black & white version
+
 ### replacing the colours
 
 ## a *sitelen pona* version
