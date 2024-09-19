@@ -253,4 +253,6 @@ Front cover: use your imagination; make front and back look good. Use only the c
 
 ## a *sitelen pona* version
 
+Please see <https://github.com/lipu-tenpo/selo/issues/2>
+
 I have never made a *sitelen pona* version yet, so I don’t know what it’s like. Once I have done it, I’ll share my experiences in this document.
