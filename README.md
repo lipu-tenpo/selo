@@ -137,8 +137,28 @@ TODO
 
 ## table of contents
 
-Add attributes
-Generate Table of Contents
+TODO
+- Add attributes
+- Generate Table of Contents
+
+The tool will spit out the list of all articles with the page numbers they start on.
+We separate them with newlines TODO.
+
+Then, we place the category markers before. They are text boxes with a built-in right margin.
+We need to calculate the height of each.
+Then, we place them after each other.
+Per category, do the following:
+
+- Add up all the points for each entry.
+	- A 1-line entry gets 3 points.
+	- A 2-line entry gets 5 points.
+	- A 3-line entry gets 7 points.
+- Add 2 points to that.
+- In the **Properties** tab, in the **X, Y, Z** category, in the **Height** field, type this number followed by `*2,25`.
+
+EXAMPLE
+
+Snap the text boxes together.
 
 ## *jan pali*
 
@@ -186,9 +206,9 @@ Once the names are sorted, do the following:
 
 A no-break space is the symbol ` `.
 
-- *Compose key + Space + Space*, or *Control + Shift + `u`, `a0`, Return*.
+- *Compose key + Space + Space*, or *Control + Shift + U, `a0`, Return*.
 - *Alt + TODO*
-- In Scribus, TODO
+- In Scribus, you can go to **Insert > Spaces & Breaks > Non Breaking Space** or type *Control + Space*.
 
 If you don’t want to type it, break the paragraph manually with soft breaks. These move to the next line without starting a new paragraph. In Scribus, and in many other places too, you can insert a soft break with *Shift + Return*.
 
@@ -232,6 +252,7 @@ In the last line, use an en dash (`–`), like this: `– jan Sonatan`.
 
 - Go to *File > Export as PDF* TODO.
 - PDF version 1.5 TODO.
+- bleed TODO.
 
 ## the greyscale version
 
