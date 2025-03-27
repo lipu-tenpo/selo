@@ -15,11 +15,51 @@ To make an edition of *lipu tenpo*, you need
 
 Sometimes, a bitmap-processing tool like [GIMP]() can also be helpful. I needed it once.
 
+### cloning the repository
+
+TODO not the whole repository
+
 ## working with Scribus
 
 Scribus is the main tool that you will use. This section contains some tips for your workflow.
 
 Turn off hyphenation.
+
+### panes
+
+During the layout process, you will frequently need to use certain panes.
+It is useful to have them docked on the side of the window, like so:
+
+TODO image
+
+We suggest the following layout. A top pane about a third the vertical height with the tabs *Properties* and *Align and Distribute*. And a bottom pane about two thirds the vertical height with the tabs *Content Properties* and *Scrapbook*.
+
+TODO is it better to put *Align and Distribute* in another pane? *Properties* and *Content Properties* can best be separated, but so can *Properties* and *Align and Distribute*, I think.
+
+(The tab *Content Properties* changes its name to *Text Properties*, *Image Properties*, etc. depending on the item that’s currently selected.)
+
+You can manage them in the *Windows* menu.
+
+TODO Show margins, boxes, text flow. And enable ‘rulers relative to page’. Toggle these options all on or off using a custom shortcut, like `\`, to preview.
+
+### the scrapbook
+
+A scrapbook is a collection of reusable elements.
+While layouting in Scribus, you can click on an element in the scrapbook to immediately put it on the page, with proper positioning.
+This saves a lot of time.
+
+The scrapbook for *lipu tenpo* is the `/jo` directory.
+You can load it in Scribus as follows:
+1. Go to the *Scrapbook* pane.
+1. At the top of the pane, click the first, rectangle-shaped icon.
+1. Navigate to the `selo` repository on your computer.
+1. Select `/jo`.
+1. Click *Choose*.
+
+Now, the *jo* scrapbook is loaded in Scribus.
+It will remain loaded the next time you TODO.
+
+TODO what’s in the *lipu tenpo* scrapbook?
 
 ## working with Inkscape
 
@@ -29,14 +69,6 @@ Copy the template file TODO into the folder of the edition.
 This table contains the entire palette. TODO
 
 The palette is in the GIMP `.gpl` format. To convert the palette into CSS colours, you can use [this script](https://gist.github.com/alifeee/586b92e21f912dde7f74cd498b7cbb56).
-
-### the scrapbook
-
-### panes
-
-Properties, Item Properties, Align and Distribute, Scrapbook, TODO
-
-TODO Show margins, boxes, text flow, rulers relative to page. Toggle these options all on or off using *F11*.
 
 ## preparing the files
 
