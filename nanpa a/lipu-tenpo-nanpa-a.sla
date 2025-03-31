@@ -226,7 +226,7 @@
         <CHARSTYLE CNAME="jan pali" CPARENT="Default Character Style" FONT="Bricolage Grotesque Medium" FONTSIZE="9.9"/>
         <CHARSTYLE CNAME="toki lili poka" CPARENT="Default Character Style" FONTSIZE="7.1" FCOLOR="kapesi"/>
         <CHARSTYLE CNAME="jan pali la nimi" CPARENT="jan pali" FONT="Bricolage Grotesque Bold" FONTFEATURES="-clig,-liga"/>
-        <CHARSTYLE CNAME="toki wawa" CPARENT="Default Character Style" FONT="Andika Bold" FONTFEATURES="-clig,+ss01" FCOLOR="kapesi walo pimeja"/>
+        <CHARSTYLE CNAME="toki wawa" CPARENT="Default Character Style" FONT="Andika Bold" FONTFEATURES="-clig,+ss01" FCOLOR="kapesi ante"/>
         <CHARSTYLE CNAME="nanpa lili sewi" CPARENT="Default Character Style" FCOLOR="kapesi"/>
         <CHARSTYLE CNAME="toki pi lipu open" CPARENT="Default Character Style" FONTSIZE="11.3"/>
         <CHARSTYLE CNAME="toki pi lipu open la nimi open" CPARENT="toki pi lipu open" FONT="Andika Bold" FONTFEATURES="-clig,+ss01" FCOLOR="laso waso"/>
