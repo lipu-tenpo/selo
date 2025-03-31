@@ -517,7 +517,9 @@
                 <DefaultStyle/>
                 <ITEXT CPARENT="toki wawa" FCOLOR="laso pimeja" CH="Hello!"/>
                 <ITEXT FCOLOR="laso pimeja" CH=" "/>
-                <ITEXT CH="You’re looking at lipu tenpo,"/>
+                <ITEXT CH="You’re looking at "/>
+                <ITEXT FONT="Andika Italic" CH="lipu tenpo"/>
+                <ITEXT CH=","/>
                 <nbspace/>
                 <ITEXT CH="a magazine written in Toki Pona."/>
                 <breakline/>
@@ -545,13 +547,17 @@
                 <para/>
                 <ITEXT CH="How can I learn Toki Pona, and where can I use it?"/>
                 <para PARENT="jan pali"/>
-                <ITEXT CH="There is the official book: Toki Pona: The Language of Good by Sonja"/>
+                <ITEXT CH="There is the official book: "/>
+                <ITEXT FONT="Andika Italic" CH="Toki Pona: The Language of Good"/>
+                <ITEXT CH=" by Sonja"/>
                 <breakline/>
                 <ITEXT CH="Lang. It teaches how to use Toki Pona. Sonja made"/>
                 <nbspace/>
-                <ITEXT CH="a Toki Pona"/>
+                <ITEXT CH="a "/>
+                <ITEXT FONT="Andika Italic" CH="Toki Pona"/>
                 <breakline/>
-                <ITEXT CH="Dictionary too. There are also several free online courses. You can"/>
+                <ITEXT FONT="Andika Italic" CH="Dictionary"/>
+                <ITEXT CH=" too. There are also several free online courses. You can"/>
                 <breakline/>
                 <ITEXT CH="find Toki Pona groups and learning resources on "/>
                 <ITEXT CPARENT="toki wawa" FCOLOR="laso pimeja" CH="tokipona.org"/>
