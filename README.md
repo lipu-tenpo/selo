@@ -24,6 +24,7 @@ TODO not the whole repository
 Scribus is the main tool that you will use. This section contains some tips for your workflow.
 
 Turn off hyphenation.
+Enable snapping.
 
 ### panes
 
@@ -250,6 +251,8 @@ You might want to ignore particles like ‹pi›, and put ‹jan pi nimi ala› 
 
 jan Nalu ? jan pi nimi ala
 
+TODO simplify this to ‘sorting keys’, like Wikipedia does: ‹jan Kasape› is sorted like ‹Kasape, jan›, and the sorting order is ‘end of string’ < a < A < e < E < … < u < U < w < W < ‘comma’. all the other characters come just before comma? See notes on mobile.
+
 ### preparing
 
 Once the names are sorted, do the following:
@@ -307,6 +310,9 @@ In the last line, use an en dash (`–`), like this: `– jan Sonatan`.
 - Go to *File > Export as PDF* TODO.
 - PDF version 1.5 TODO.
 - bleed TODO.
+- only for the printable version:
+    - select Use Document Bleeds.
+    - check ‘crop marks’, set the offset to 2 mm.
 
 ## the greyscale version
 
@@ -316,7 +322,7 @@ In the last line, use an en dash (`–`), like this: `– jan Sonatan`.
 - ungroup the front and back cover with *Control + Shift + `g`*.
 - you can remove the objects that are not displayed on the page, but it’s not necessary. If you do, then the pre-flight verifier in Scribus will raise some errors like ‹Object is not on a Page TODO› before you export the document. You can ignore them.
 
-Front cover: use your imagination; make front and back look good. Use only the colours ‹kiwen› and ‹kiwen walo›
+Front cover: use your imagination; make front and back look good. Use only the colours ‹kapesi walo› and ‹kapesi ante›.
 
 ## printable versions
 
