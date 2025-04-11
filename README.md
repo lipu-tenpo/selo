@@ -97,7 +97,7 @@ TODO use the files that you need for all editions, move them to `/ali`
 
 ### the text
 
-import with *Control + `i`*.
+Import with *Control + `i`*.
 Line breaks are like paragraph breaks to Scribus. You must adjust them manually.
 
 ### images
@@ -271,9 +271,13 @@ If you don’t want to type it, break the paragraph manually with soft breaks. T
 
 - no-break spaces between ‹li alasa e pakala toki.› and so forth.
 
-## introduction by jan Sonatan
+## introduction text
 
-jan Sonatan will usually break the lines for you in a good way.
+The intro text is written by jan Sonatan.
+It contains a few line breaks.
+If you paste the text, Scribus will interpret these as paragraph breaks.
+The paragraphs should still be line-broken in a reasonable way.
+This is up to you.
 
 First and last line is in the style *toki wawa* and has colour *unu pimeja*.
 
@@ -281,28 +285,31 @@ In the last line, use an en dash (`–`), like this: `– jan Sonatan`.
 
 ## checklist before publishing
 
-- manual adjustment: arrows, pini, table of contents
+This checklist will soon be moved to each edition’s `/nanpa x/checklist.md`.
+
+- manual adjustment: arrows, pini
 
 - images: use integers for scaling and panning, because you have to remember them
 
-- checks
 1. *jan pali*
 	1. Are exactly all the authors mentioned before *li toki*?
 	1. Are exactly all the illustrators mentioned before *li sitelen*?
-	1. Are you and the designers mentioned before *li sijelo e lipu*?
-1. order
+	1. Are you and the other designers mentioned before *li sijelo e lipu*?
+1. table of contents
 	1. Where there are multiple articles on one page, does the order of articles correspond to the order in the table of contents?
 		- If not, move some titles to the foreground.
 		- select the title
+1. categories
 	1. Does the category name next to the page number correspond with the category name of the article on it?
+		- Are all categories contiguous? That is, is there no article that separates articles of the same category?
 		- If the category changes in the middle of a page, use that category.
-		- If there are multiple categories, ‹4 · toki · pilin›
-	1. Does each non-poetry article start with an arrow and end with a ‹pini› symbol?
-		1. If an article continues from an odd page to an even page, is there an arrow in the bottom right on the odd page?
-		1. Are the first words of each non-poetry article in bold?
-		1. Is the TODO
-	1. Are the colours correct?
-		1. For each category, is the background of the title images the same shade?
+		- If multiple categories begin on a page, mention all: ‹4 · toki · pilin›
+1. Does each nonpoetry article start with an arrow and end with a ‹pini› symbol?
+	1. If an article continues from an odd page to an even page, is there an arrow in the bottom right on the odd page?
+	1. Are the first words of each non-poetry article in bold?
+	1. Is the TODO
+1. Are the colours correct?
+	1. For each category, is the background of the title images the same shade?
 1. Is the PDF metadata correct?
 
 ## exporting
@@ -337,3 +344,9 @@ Front cover: use your imagination; make front and back look good. Use only the c
 Please see <https://github.com/lipu-tenpo/selo/issues/2>
 
 I have never made a *sitelen pona* version yet, so I don’t know what it’s like. Once I have done it, I’ll share my experiences in this document.
+
+## line breaking
+
+
+
+
