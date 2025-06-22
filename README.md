@@ -97,8 +97,61 @@ TODO use the files that you need for all editions, move them to `/ali`
 
 ### the text
 
-Import with *Control + `i`*.
-Line breaks are like paragraph breaks to Scribus. You must adjust them manually.
+Here is how to import a Markdown file in a text frame:
+
+1. Select the text frame.
+2. Import a Markdown file with *Control + `i`*. A file dialog appears.
+3. Find the file you want to import, and select it.
+    - You can make only Markdown documents visible by setting *Files of type* to *MarkDown Document (\*.md)*.
+4. Check these settings (the first time you import a file):
+    - Make sure that *Importer* is set to *MarkDown Document*.
+    - Make sure that *Import Text Only* is unchecked.
+6. Click *OK*.
+
+Now, the contents of the Markdown file are put in the text frame, including the header with metadata:
+the article title, the author and the category.
+1. From the *jo* scrapbook, add a header block.
+2. Copy the article title and paste it in the header.
+    - The article title is the text after ‹nimi-suli:›.
+3. Copy the author name and paste it after ‹tan› in the author text field.
+    - The author’s name is the text after ‹jan-pali:›.
+    - Ensure the character style of the author’s name is *jan pali la nimi*.
+    - If multiple people have written the article, separate the authors’ names with ‹tan›.
+4. If the article has illustrations, write the names of the illustrators after ‹sitelen li tan›.
+    - Ensure the character style of the illustrator’s names are *jan sitelen la nimi*.
+
+Now, you can remove the metadata.
+
+### adapting the text
+
+If the article contains headings, give them the style *jan pali*, just like the author line.
+
+Finally, you will have to correct some importing mistakes.
+Scribus doesn’t distinguish between line breaks and paragraph breaks.
+This means that poems look like collections of single-line paragraphs.
+So, you must replace them manually.
+Navigate to the original article, or its Markdown file, to see which breaks should be line breaks.
+Then, for each incorrect break in the text frame, delete it and insert a line break with *Shift + Enter*.
+
+### layouting the text
+
+Most articles span several text frames.
+This means that the article is interrupted by frame breaks.
+Try to make these frame breaks as little disturbing as possible.
+You can do this by adjusting the height of the frames.
+There is often just a little wiggle room, within which you can adjust the frame heights
+
+Try to keep paragraphs together as much as possible.
+That is, if you can distribute the article in such a way that no frame break occurs inside a paragraph, do this.
+
+However, a frame break in a paragraph is often unavoidable.
+If this happens, try to make clear that the end of the frame is not the end of the paragraph.
+So, avoid putting a frame break after a complete sentence;
+prefer a mid-sentence break instead.
+
+But not within a compound – that’s disturbing.
+
+TODO rules for good line breaking. also mention Short Words
 
 ### images
 
@@ -156,7 +209,7 @@ Make the cover image in `/nanpa x/ijo/selo.svg`, with the following restrictions
 - Three colours on the front side.
 - Three colours on the back.
 - Always four colours in total.
-- Always white on both sides.
+- Always some white on both sides.
 - The selection of three front colours must not have been used in the two previous editions’ front covers.
 
 The colours are made by blobs (Bézier tool). Put all four of them on the background. Then, make four rectangles the size of the page. Then, for each colour, select a rectangle and *Ctrl + \** to intersect the two shapes. This way, all four coloured blobs will be cut to the boundaries.
@@ -176,9 +229,11 @@ Back side:
 
 ### the image
 
-The proportions of the front-cover image are preferably TODO.
+The proportions of the front-cover image are preferably 1:1.
 
 The front-cover image is usually in SVG format, because jan Simo usually draws it.
+SVGs means no image frame.
+Import an SVG file with *Control + Shift + `i`*.
 
 The second page of an edition has four parts.
 
@@ -194,6 +249,13 @@ TODO
 
 TODO
 - Add attributes
+    - every line break in the table of contents must be deliberate
+    - in the Attributes window, a line break looks like a space
+    - copy-paste the article title into the Value field to keep these line breaks
+    - these line breaks will appear in the table of contents
+    - if the article title also fits in the TOC without a line break, then replace the line break in the Value field with a space, to keep the TOC compact.
+    - for display reasons, you might want to line-break a header in weird ways. for instance: ‹weka / li ante / e suli› (lipu tenpo nanpa sin), where ‹/› is a line break. but in the TOC, just put ‹weka li ante e suli›, without line breaks, because it fits on one TOC line.
+    - first break the heading in the way that you want to make it appear in the TOC. then copy-paste into Value, hit Enter *and then* save. then break the heading in the way you want. (do this weird process because you can’t enter line breaks in the Value field directly)
 - Generate Table of Contents
 
 The tool will spit out the list of all articles with the page numbers they start on.
