@@ -327,7 +327,7 @@ A no-break space is the symbol ` `.
 
 - *Compose key + Space + Space*, or *Control + Shift + U, `a0`, Return*.
 - *Alt + TODO*
-- In Scribus, you can go to **Insert > Spaces & Breaks > Non Breaking Space** or type *Control + Space*.
+- In Scribus, you can go to *Insert > Spaces & Breaks > Non Breaking Space* or type *Control + Space*.
 
 If you don’t want to type it, break the paragraph manually with soft breaks. These move to the next line without starting a new paragraph. In Scribus, and in many other places too, you can insert a soft break with *Shift + Return*.
 
@@ -356,16 +356,20 @@ This checklist will soon be moved to each edition’s `/nanpa x/checklist.md`.
 1. *jan pali*
 	1. Are exactly all the authors mentioned before *li toki*?
 	1. Are exactly all the illustrators mentioned before *li sitelen*?
+	1. Is the front-cover illustrator mentioned before *li sitelen e sitelen sinpin*?
 	1. Are you and the other designers mentioned before *li sijelo e lipu*?
 1. table of contents
 	1. Where there are multiple articles on one page, does the order of articles correspond to the order in the table of contents?
-		- If not, move some titles to the foreground.
-		- select the title
+		- If not, you must change the z-indices of titles. You can do this in the following way:
+			1. Determine what the most logical reading order is of the articles on the page.
+			1. Select the title of the second article according to your order. Then, press the *Home* key to move it to the foreground.
+			1. Repeat the previous step for each subsequent article on the page, in the order that you determined.
+			1. Regenerate the table of contents using *Extras > Generate Table Of Contents*, and add line breaks with *Shift + Enter* after each category.
 1. categories
 	1. Does the category name next to the page number correspond with the category name of the article on it?
 		- Are all categories contiguous? That is, is there no article that separates articles of the same category?
 		- If the category changes in the middle of a page, use that category.
-		- If multiple categories begin on a page, mention all: ‹4 · toki · pilin›
+		- If multiple articles of different categories begin on the same page, mention all categories, separating them with a middle dot: ‹8 · sona · pilin›
 1. Does each nonpoetry article start with an arrow and end with a ‹pini› symbol?
 	1. If an article continues from an odd page to an even page, is there an arrow in the bottom right on the odd page?
 	1. Are the first words of each non-poetry article in bold?
@@ -408,7 +412,5 @@ Please see <https://github.com/lipu-tenpo/selo/issues/2>
 I have never made a *sitelen pona* version yet, so I don’t know what it’s like. Once I have done it, I’ll share my experiences in this document.
 
 ## line breaking
-
-
 
 
