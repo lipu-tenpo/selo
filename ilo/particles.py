@@ -38,19 +38,15 @@ def improved_text_of(toki):
 	subs = [0] * 8 # TODO better style
 
 	# before modifier ‹a›
-	# TODO use lookbehind.
-	# otherwise, ‹a a a!› becomes ‹a~a a!›; should be ‹a~a~a!›
-	# TODO what to do with looong sequence of ‹a›?
-	# only join the first pair and last pair?
-	toki, subs[0] = re.subn(r'(' + ilo_ala + r') (a)\b', r'\1 \2', toki)
+	toki, subs[0] = re.subn(r'(?!' + ilo_ala + r') (a)\b', r' \1', toki)
 
 	# before vocative ‹o›
 	toki, subs[1] = re.subn(r'(' + ilo_ala + r') (o\b' + kon_ken + ilo + r')', r'\1 \2', toki)
 
 	# after ‹li›, ‹o› or ‹e›
-	# toki = re.sub(r'\b(li|o|e) (' + ilo_ala + r')', r'\1 \2', toki)
+	toki, subs[2] = re.subn(r'\b(li|o|e) (?=' + ilo_ala + r')', r'\1 ', toki)
 	# non-overlapping. i.e. ‹li li li li› becomes ‹li~li li~li›
-	toki, subs[2] = re.subn(r'\b(li|o|e) ', r'\1 ', toki)
+	# toki, subs[2] = re.subn(r'\b(li|o|e) ', r'\1 ', toki)
 	# allows overlapping, but matches if li is followed by any space,
 	# including the two spaces at the end of a line, or other Markdown spaces.
 
@@ -112,6 +108,9 @@ def improve_contents_of_file(file_name):
 
 if __name__ == '__main__':
 	# Replace the text of all files given by the arguments.
+	if not sys.argv[1:]: # if no arguments
+		tryout()
+
 	total_subs = 0
 	for arg in sys.argv[1:]:
 		for file_name in glob.glob(arg):
