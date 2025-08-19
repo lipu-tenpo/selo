@@ -205,14 +205,20 @@ You now have a file for each background shape. Let’s put it in Scribus. For ev
 
 Change the text in the textbox to the name of the edition.
 
-Make the cover image in `/nanpa x/ijo/selo.svg`, with the following restrictions:
+Make the cover edge in `/nanpa x/ijo/selo.svg`, with the following restrictions:
 - Three colours on the front side.
 - Three colours on the back.
 - Always four colours in total.
 - Always some white on both sides.
 - The selection of three front colours must not have been used in the two previous editions’ front covers.
 
-The colours are made by blobs (Bézier tool). Put all four of them on the background. Then, make four rectangles the size of the page. Then, for each colour, select a rectangle and *Ctrl + \** to intersect the two shapes. This way, all four coloured blobs will be cut to the boundaries.
+The colours are made by blobs (Bézier tool).
+Put all four of them on the background.
+Then, make four rectangles the size of the page.
+Then, for each colour, select a rectangle and *Ctrl + \** to intersect the two shapes.
+This way, all four coloured blobs will be cut to the boundaries.
+
+Import the cover edge in Scribus with *Ctrl + Shift + `i`*.
 
 Dimensions:
 - height: 216 mm

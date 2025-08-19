@@ -44,6 +44,18 @@ def print_pimeja(lipu):
 	# Output destination: printer.
 	lipu.outdst = 1
 
+	# Use document bleeds?
+	lipu.useDocBleeds = False
+
+	# Show crop marks?
+	lipu.cropMarks = False
+
+	# Name of file to save into.
+	# FIXME cut off the last four letters (.sla)
+	# and append .pdf extension
+	nimi = scribus.getDocName()
+	lipu.file = nimi[:-4] + '-pimeja.pdf'
+
 	# Save selected pages to PDF file.
 	lipu.save()
 
@@ -54,6 +66,9 @@ def print_ilo(lipu):
 	# Appears to be with extension.
 	# Unsure whether the path is also included.
 	nimi = scribus.getDocName()
+
+	# Use document bleeds?
+	lipu.useDocBleeds = True
 
 	# Show bleed marks?
 	lipu.bleedMarks = False
@@ -78,5 +93,6 @@ def print_ilo(lipu):
 if __name__ == '__main__':
 	lipu = scribus.PDFfile()
 	general_settings(lipu)
+	# print_pimeja(lipu)
 	print_ilo(lipu)
 	scribus.messagebarText('Successfully exported.')
