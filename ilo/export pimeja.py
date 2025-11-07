@@ -94,5 +94,5 @@ if __name__ == '__main__':
 	lipu = scribus.PDFfile()
 	general_settings(lipu)
 	# print_pimeja(lipu)
-	print_ilo(lipu)
+	# print_ilo(lipu)
 	scribus.messagebarText('Successfully exported.')
