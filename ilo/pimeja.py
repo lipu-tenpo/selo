@@ -61,4 +61,5 @@ if __name__ == '__main__':
 		replace_main_colors()
 	elif choice == 65536:
 		# no
+		pass
 
