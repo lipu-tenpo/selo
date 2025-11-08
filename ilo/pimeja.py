@@ -50,5 +50,15 @@ def replace_images():
 	
 
 if __name__ == '__main__':
-	replace_main_colors()
+	# TODO option 1: save the file first, then replace colours and save the Scribus file in a new -pimeja.sla file.
+	choice = scribus.messageBox('Replace colours?', 'Do you want to replace the main colours with their greyscale variants?', scribus.ICON_NONE, scribus.BUTTON_CANCEL|scribus.BUTTON_ESCAPE, scribus.BUTTON_YES|scribus.BUTTON_DEFAULT, scribus.BUTTON_NO)
+	# TODO remove the cancel button. but then, the numbers might change.
+	if choice == 4194304:
+		# cancel
+		pass
+	elif choice == 16384:
+		# yes
+		replace_main_colors()
+	elif choice == 65536:
+		# no
 
