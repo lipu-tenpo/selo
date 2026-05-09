@@ -1,3 +1,7 @@
+> [!NOTE]
+> This repository has moved. It is now merged with [the liputenpo.org repository](https://github.com/lipu-tenpo/liputenpo.org/tree/main/content/scribus).
+
+<!--
 # how to typeset<br>an edition of *lipu tenpo*
 
 Welcome to the *selo* repository. It contains all the files you need to typeset your own edition of *lipu tenpo*. This file has all the instructions you need to do that.
@@ -418,5 +422,4 @@ Please see <https://github.com/lipu-tenpo/selo/issues/2>
 I have never made a *sitelen pona* version yet, so I don’t know what it’s like. Once I have done it, I’ll share my experiences in this document.
 
 ## line breaking
-
-
+-->
