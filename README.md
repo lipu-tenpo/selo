@@ -1,5 +1,5 @@
 > [!NOTE]
-> This repository has moved. It is now merged with [the liputenpo.org repository](https://github.com/lipu-tenpo/liputenpo.org/tree/main/content/scribus).
+> This repository has moved. It is now merged with [the liputenpo.org website repository](https://github.com/lipu-tenpo/liputenpo.org/tree/main/content/scribus).
 
 <!--
 # how to typeset<br>an edition of *lipu tenpo*
